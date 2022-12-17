@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <title>Western Columbia Grocers</title>
+</head>
+<body>
+<h1>Western Columbia Grocers</h1>
+
+<form action="mailto:youraddr@example.com" method="GET" enctype="text/plain">
+    <table cellpadding="5" class="formtable">
+        <tr><td>Name</td>
+            <td><input type="text" id="name" size="25" maxlength="25" autofocus="yes"
+                       pattern="[A-Za-z-]+"></td></tr>
+
+        <tr><td>Address</td>
+            <td><input type="text" id="address" size="25" autofocus="yes"></td></tr>
+
+        <tr><td>Telephone Number</td>
+            <td><input type="tel" id="phone" size="25"
+                       placeholder="### ### ####"
+                       pattern="\d{3} \d{3} \d{4}"></td></tr>
+
+        <tr><td>Age</td>
+            <td><input type="number" id="age" size="5" min="18" max="100"></td></tr>
+
+        <tr><td>E-mail</td>
+            <td><input type="email" id="email" size="25"
+                       placeholder="example@example.com"
+                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></td></tr>
+
+        <tr><td>Registration Date</td>
+            <td><input type="date" id="date"></td></tr>
+    </table><br><br>
+
+    <div style="padding: 10px">
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </div>
+</form>
+</body>
+</html>

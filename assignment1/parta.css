@@ -1,0 +1,53 @@
+body{
+    background-image: url("pics/background1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.content{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(97, 100, 105);
+    border-radius: 6px;
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    background: rgba(115, 148, 202, 0.8);
+    font-family: 'Lora', serif;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 250%;
+}
+
+img{
+    width: 250px;
+    height: auto;
+    transition: transform 3s;
+}
+
+.right
+{
+    float: right;
+    text-align: center;
+}
+
+.left{
+    float: left;
+    text-align: center;
+}
+
+img:hover{
+    /*transform: rotate(360deg) scale(2,2);*/
+    transform: scale(1.25);
+}
+
+p::first-letter {
+    font-weight: bold;
+    font-size: 30px;
+}

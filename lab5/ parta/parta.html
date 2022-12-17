@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Measurement</title>
+    <link href="parta.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="parta.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Ubuntu&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Measurement Converter</h1>
+    <form action="parta.html">
+        <table>
+            <th></th><th>Imperial</th><th>Metric</th>
+            <tr>
+                <td>Length</td>
+                <td><input type="number" min="0" id="feet" placeholder="Feet" onchange="feetToMeter(this.value);"></td>
+                <td><input type="number" min="0" id="meter" placeholder="Meter" onchange="meterToFeet(this.value);"></td>
+            </tr>
+
+            <tr>
+                <td>Volume</td>
+                <td><input type="number" min="0" id="gallon" placeholder="Gallon" onchange="gallonToLiter(this.value);"></td>
+                <td><input type="number" min="0" id="liter" placeholder="Liter" onchange="letterToGallon(this.value);"></td>
+            </tr>
+
+            <tr>
+                <td>Area</td>
+                <td><input type="number" min="0" id="squareFeet" placeholder="Square Feet" onchange="squareFeetToSquareMetres(this.value);"></td>
+                <td><input type="number" min="0" id="squareMetres" placeholder="Square Metres" onchange="squareMetresToSquareFeet(this.value);"></td>
+            </tr>
+
+            <tr>
+                <td>Distance</td>
+                <td><input type="number" min="0" id="mile" placeholder="Mile" onchange="mileToKilometer(this.value);"></td>
+                <td><input type="number" min="0" id="kilometer" placeholder="Kilometer" onchange="kilometerToMile(this.value);"></td>
+            </tr>
+        </table><br>
+        <input type="reset" value="reset">
+    </form>
+</body>
+</html>

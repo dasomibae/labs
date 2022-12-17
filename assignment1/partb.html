@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="partb.js"></script>
+    <link href="partb.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Neucha&display=swap" rel="stylesheet">
+</head>
+<body id="background">
+<header>
+    <img src="pics/logo.png" alt="logo">
+    <h1>Western Valley Farms</h1>
+</header>
+
+<div class="content">
+    <form method="post" enctype="text/plain">
+        <table class="information">
+            <tr><td>Current Date</td>
+                <td><input type="date" id="date"></td></tr>
+
+            <tr><td>Client Name</td>
+                <td><input type="text" id="firstName" size="13" maxlength="20" autofocus="yes"
+                           pattern="[A-Za-z-]+" placeholder="First name" required>
+                    <input type="text" id="lastName" size="13" maxlength="20" autofocus="yes"
+                           pattern="[A-Za-z-]+" placeholder="Last name" required></td></tr>
+
+            <tr><td>Street Address</td>
+                <td><input type="text" id="address" size="31" autofocus="yes" placeholder="Address" required></td></tr>
+
+            <tr><td>Postal Code</td>
+                <td><input type="text" id="postalCode" size="31" autofocus="yes" placeholder="A1A 1A1"
+                           pattern="[A-Za-z]+[0-9]+[A-Za-z] [0-9]+[A-Za-z]+[0-9]" required></td></tr>
+
+            <tr><td>Phone Number</td>
+                <td><input type="radio" name="phoneType" value="business  " size="10">business
+                    <input type="radio" name="phoneType" value="personal" size="10">personal</td></tr>
+            <tr><td></td><td><input type="tel" id="phone" size="18" placeholder="### ### ####"
+                                    pattern="\d{3} \d{3} \d{4}" required></td></tr>
+
+            <tr><td>Email</td>
+                <td><input type="email" id="email" size="31" placeholder="example@example.net"
+                           pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required></td></tr>
+
+            <tr><td>Option</td>
+                <td>
+                    <input type="radio" name="pickup_delivery" value="Pickup " size="10">Pickup
+                    <input type="radio" name="pickup_delivery" value="Delivery" size="10">Delivery</td></tr>
+        </table><br>
+
+        <table class="supplement">
+            <tr><th scope="col">Hamper Name</th>
+                <th scope="col">Price</th></tr>
+            <tr><td><input type=checkbox id="vegetable" value=0>Vegetable Hamper</td>
+                <td><input type="number" size="100" id="vegetable_price" min="0" value="1"></td>
+            <td>20kg: $30.00</td></tr>
+            <tr><td><input type=checkbox id="fruit" value=0>Fruit Hamper</td>
+                <td><input type="number" size="100" id="fruit_price" min="0" value="1"></td>
+            <td>10kg: $20.00</td></tr>
+            <tr><td><input type=checkbox id="chicken" value=0>Fresh Chickens</td>
+                <td><input type="number" size="100" id="chicken_price" min="0" value="1"></td>
+            <td>$4/kg</td></tr>
+            <tr><td><input type=checkbox id="pork" value=0>Pork<br></td>
+            <td><input type="number" size="100" id="pork_price" min="0" value="1"></td>
+            <td>$5/kg</td></tr>
+        </table>
+
+
+        <div class="submit_button">
+            <input type=submit value="Submit" class="button" onClick="checkOrder(); return false;"></div>
+
+    </form>
+
+    <div class="box">
+        <p class="detail"><span id="result"></span></p></div>
+</div>
+</body>
+</html>

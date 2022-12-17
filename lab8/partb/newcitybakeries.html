@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>New City Bakeries</title>
+    <link href="newcitybakeries.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="newcitybakeries.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header><h1>New City Bakeries</h1>
+        <p>99 Abcd Rd NW, Calgary, AB, Canada (A3D 3R1)<br>(123) 456 - 7890 / newcity@gmail.com</p></header>
+
+<div class="content">
+<div class="row">
+    <div class="column">
+
+        <!--customer info-->
+        <form id="information" onsubmit="information();return false">
+            <table class="customer_info">
+                <tr><th>Name</th>
+                    <td><input type="text" id="firstname" size="13" maxlength="20"
+                               pattern="[A-Za-z-]+" placeholder="First name" required="true" autofocus>
+                        <input type="text" id="lastname" size="13" maxlength="20"
+                               pattern="[A-Za-z-]+" placeholder="Last name" required="true" autofocus></td></tr>
+
+                <tr><th>Address</th>
+                    <td><input type="text" id="address" size="31" placeholder="Address" required="true" autofocus></td></tr>
+
+                <tr><th>Postal Code</th>
+                    <td><input type="text" id="postalcode" placeholder="A1A1A1" size="8"
+                               pattern="[a-zA-Z][0-9][a-zA-Z][0-9][a-zA-Z][0-9]" required="true"></td></tr>
+
+                <tr><th>Phone Number</th>
+                    <td><input type="tel" id="phone" size="18" placeholder="###-###-####"
+                               pattern="\d{3}-\d{3}-\d{4}" required="true"></td></tr>
+
+                <tr><th>E-mail</th>
+                    <td><input type="email" id="email" size="31" placeholder="example@example.net"
+                               pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="true"></td></tr></table>
+
+                <div class="button">
+                    <input type="submit" value="submit" class="submit_button">
+                    <input type="reset" value="reset" class="buttonstyle"></div>
+            </table>
+        </form>
+
+        <!--cake order info-->
+        <table class="cake_order">
+            <tr><th>Choose Cake</th>
+                <td><select name="Type of Cake" size="2" id="cakeType" disabled="true" onchange="typeOfCake();return false;">
+                        <option name="cake" value="1">Sheet Cake</option>
+                        <option name="cake" value="2">Round Cake</option></select></td></tr>
+
+
+            <tr><th>Sheet Cake</th><th>Round Cake</th><th></th><tr></tr>
+                <td>Length<input type="number" size="4" min="30" max="60" id="length" readonly="true"></td>
+                <td>Radius<input type="number" size="4" min="15" max="30" id="radius" readonly="true"></td><tr></tr>
+                <td>Width<input type="number" size="8" min="30" max="45" id="width" readonly="true"></td></tr>
+
+            <tr><th>Choose Layer</th>
+                <td><select name="Layer for Round Cake" size="3" id="layer" disabled="true">
+                    <option name="layer" value="1">1 Layer</option>
+                    <option name="layer" value="2">2 Layers</option>
+                    <option name="layer" value="3">3 Layers</option></select></td></tr>
+
+            <tr><th>Additional Choices</th>
+                <td><input type=checkbox id="cream_cheese" value=5>Cream Cheese icing is an extra $5</td></tr><tr><td></td>
+                <td><input type=checkbox id="fruit_almonds" value=7>Fruit and Almonds topping is an extra $7</td></tr><tr><td></td>
+                <td><input type=checkbox id="fruit_jam" value=4>Fruit jam filling between layers is an extra $4</td></tr></tr>
+        </table>
+        <input type="button" id="order" value="Order" class="buttonstyle" onclick="order();return false;">
+    </div>
+
+
+    <!--output-->
+    <div class="column">
+        <div id="output">
+            <h3><span id="printout"></span></h3>
+        </div>
+
+    </div>
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body{
+    background-color: #b08903;
+    text-align: center;
+}
+
+header h1{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 40px;
+    color: #8e23b6;
+}
+
+.content{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffbb9f;
+    background: rgba(168, 170, 175, 0.2);
+    padding: 10px;
+}
+
+.text{
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+}
+
+p::first-letter {
+    font-size: 230%;
+    color: indigo;
+    font-weight: bolder;
+}
+figure{
+    float: left;
+    display: table;
+}
+
+.fig2{
+    float: right;
+}
+
+a:hover{
+    color: #f53e21;
+}
+
+
+img{
+    width: 200px;
+    height: auto;
+}

@@ -1,0 +1,47 @@
+body
+{
+    background-image: url(pics/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #cccccc;
+}
+
+#time-update{
+    text-align: left;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (min-device-width: 400px) {
+    .large-image {
+        /* indicate where we can it to display */
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 125px;
+        height: auto;
+        border-radius: 2px;
+    }
+    .large-image img {
+        width: 100%;
+        height: auto;
+    }
+    #margherita_small:hover ~ .hidden#margherita_large  {
+        display: block;
+    }
+    #quattro_formaggi_small:hover ~ .hidden#quattro_formaggi_large  {
+        display: block;
+    }
+    #PETG-Black-Small:hover ~ .hidden#PEG-Black-Large  {
+        display: block;
+    }
+
+}

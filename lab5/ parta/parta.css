@@ -1,0 +1,53 @@
+/*parta.css*/
+
+body {
+    text-align: center;
+    background-image: url(../pics/background.jpg);
+    font-family: 'Indie Flower', cursive;
+}
+
+h1
+{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 70px;
+    color: #e9b90c;
+    text-shadow: 2px 2px 1px #fffbf4;
+}
+
+form {
+    background-color: rgba(34, 34, 34, 0.8);
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 10px;
+    padding: 30px;
+    width: 30%;
+    margin-top: 3%;
+    margin-left:auto;
+    margin-right:auto;
+    color: #ffcf21;
+}
+
+table
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+th
+{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+td
+{
+    font-size: 20px;
+    padding: 5px;
+}
+
+tr{
+    text-align: left;
+}

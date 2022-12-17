@@ -1,0 +1,86 @@
+/*background*/
+body{
+    text-align: center;
+    background-image: url(../pics/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*header*/
+header{
+    color: #3e609f;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Shippori Mincho', serif;
+}
+
+header img{
+    width: auto;
+    height: 80px;
+    display: inline-block;
+}
+
+header h1{
+    display: inline-block;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 1px 4px 2px #efeff1;
+}
+
+/*body*/
+.content{
+    background-color: rgba(255, 255, 255, 0.6);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6d6d70;
+    border-radius: 2px;
+    padding: 25px;
+    width: 50%;
+    margin: auto;
+    color: black;
+}
+
+/*table*/
+table td{
+    width: 300px;
+    text-align: left;
+}
+
+table tr{
+    width: 50px;
+}
+
+table {
+    margin-bottom: 10px;
+}
+
+/*button*/
+.button{
+    margin-top: 50px;
+}
+
+.button input{
+    margin-right: 30px;
+}
+
+footer
+{
+    font-family: 'Montserrat', sans-serif;
+    bottom: 0;
+    position: fixed;
+    width: 80%;
+    color: white;
+    font-size: 30px;
+    background-color: rgba(52, 51, 51, 0.8);
+    margin-left: 10%;
+}
+
+#hidden
+{
+    opacity: 0.0;
+}

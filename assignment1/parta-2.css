@@ -1,0 +1,65 @@
+body{
+    background-image: url("pics/background3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.content{
+    border-style: solid;
+    border-width: 0px;
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    background: rgba(41, 40, 40, 0.8);
+    color: #c1c0c0;
+    font-size: 17px;
+    font-family: 'Cairo', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 250%;
+    color: #1c852c;
+    font-family: 'Abril Fatface', cursive;
+}
+
+h2{
+    font-family: 'Abril Fatface', cursive;
+    color: #369845;
+    font-size: 29px;
+}
+
+.intro{
+    text-align: center;
+}
+
+img{
+    width: 250px;
+    height: auto;
+    transition: transform 3s;
+}
+
+.right
+{
+    float: right;
+    text-align: center;
+}
+
+.left{
+    float: left;
+    text-align: center;
+}
+
+img:hover{
+    /*transform: rotate(360deg) scale(2,2);*/
+    transform: scale(1.25);
+
+}
+
+p::first-letter {
+    font-weight: bold;
+    font-size: 30px;
+    /*color: #2bae51;*/
+}

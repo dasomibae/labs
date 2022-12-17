@@ -1,0 +1,54 @@
+body{
+    background-image: url("pics/background2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.content{
+    border-style: solid;
+    border-width: 0px;
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    background: rgba(190, 188, 188, 0.7);
+    font-family: 'Antic Slab', serif;
+    color: #000000;
+    font-size: 17px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Arvo', serif;
+    font-size: 250%;
+    color: #b75515;
+}
+
+img{
+    width: 250px;
+    height: auto;
+    transition: transform 3s;
+}
+
+.right
+{
+    float: right;
+    text-align: center;
+}
+
+.left{
+    float: left;
+    text-align: center;
+}
+
+img:hover{
+    transform: rotate(360deg) scale(1.25);
+    /*transform: scale(2,2);*/
+}
+
+p::first-letter {
+    font-weight: bold;
+    font-size: 35px;
+    color: #b75515;
+}

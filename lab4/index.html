@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Café Europa</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link type="text/css" rel="stylesheet" href="index.css">
+</head>
+
+<body onload="ShowDateTime();">
+<p>The current Date/Time is:</p>
+<div id="time-update"></div>
+
+<!--<form name=costDelicatessen>-->
+    <table cellpadding="7">
+        <tr><td>Name</td>
+            <td><input type="text" id="firstName" size="13" maxlength="20" autofocus="yes"
+                       pattern="[A-Za-z-]+" placeholder="First name" required>
+                <input type="text" id="lastName" size="13" maxlength="20" autofocus="yes"
+                       pattern="[A-Za-z-]+" placeholder="Last name" required></td></tr>
+
+        <tr><td>Phone Number</td>
+            <td><input type="tel" id="phone" size="31" placeholder="###-###-####"
+                       pattern="\d{3}-\d{3}-\d{4}" required></td></tr>
+
+        <tr><td>Date for pickup</td>
+            <td><input type="date" id="pickupDate"></td></tr>
+
+
+        <tr><th>Neapolitan Style Pizza</th></tr>
+        <tr><td><img src="pics/Margherita.jpg" alt="margherita" id="margherita_small" class="small-image">
+            <img src="pics/Margherita.jpg" alt="margherita" id="margherita_large" class="hidden large-image"></td>
+            <td>Margherita</td>
+            <td>$12.00</td>
+            <td><input type="number" id="margherita_qty" min=0 max=100 value="0"></td></tr>
+        <tr><td><img src="pics/Quattro_Formaggi.jpg" alt="quattro_formaggi" id="quattro_formaggi_small" class="small-image">
+            <img src="pics/Quattro_Formaggi.jpg" alt="quattro_formaggi" id="quattro_formaggi_large" class="hidden large-image"></td>
+            <td>Quattro Formaggi</td>
+            <td>$12.50</td></tr>
+        <tr><td><img src="pics/Capricciosa.jpg" alt="capricciosa"></td>
+            <td>Capricciosa</td>
+            <td>$13.00</td>
+            <td><input type="number" id="capricciosa_qty" min=0 max=100 value="0"></td></tr>
+
+        <tr><th>Sandwich Choices</th></tr>
+        <tr><td><img src="pics/Schnitzel.jpg" alt="Schnitzel"></td>
+            <td>Schnitzel</td>
+            <td>$8.50</td>
+            <td><input type="number" id="schnitzel_qty" min=0 max=100 value="0"></td>
+        <tr><td><img src="pics/Mixed_Grill.jpg" alt="mixed_grill"></td>
+            <td>Mixed Grill</td>
+            <td>$9.50</td>
+            <td><input type="number" id="mixed_grill_qty" min=0 max=100 value="0"></td></tr>
+        <tr><td><img src="pics/Big_Beef.jpg" alt="big_beef"></td>
+            <td>Big Beef on a Bun</td>
+            <td>$10.00</td>
+            <td><input type="number" id="big_beef_qty" min=0 max=100 value="0"></td></tr>
+
+        <tr><th>Bevarages</th></tr>
+        <tr><td><img src="pics/Coffe.jpeg" alt="Coffee"></td>
+            <td>Coffee</td>
+            <td>$2.00</td>
+            <td><input type="number" id="coffee" min=0 max=100 value="0"></td></tr>
+        <tr><td><img src="pics/Latte.jpg" alt="Latte"></td>
+            <td>Latte</td>
+            <td>$2.50</td>
+            <td><input type="number" id="latte" min=0 max=100 value="0"></td></tr>
+        <tr><td><img src="pics/Soft_Drink.jpg" alt="Soft Drink"></td>
+            <td>Soft Drink</td>
+            <td>$1.75</td>
+            <td><input type="number" id="soft_drink" min=0 max=100 value="0"></td></tr>
+    </table>
+
+    <input type=button value="Order" onClick="total();">
+    <h2><span id="result"></span></h2>
+</body>
+</html>

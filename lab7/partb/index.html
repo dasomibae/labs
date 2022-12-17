@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
+    <title>Wild Rose Country Finance</title>
+</head>
+<body>
+<header>
+    <img src="../pics/logo.png" alt="logo">
+    <h1>Wild Rose Country Finance&nbsp</h1>
+</header>
+<div class="content">
+    <form method="post" enctype="text/plain" id="register" name="register" onsubmit="addToArray(); return false;">
+        <table cellpadding="7">
+
+            <!--client info-->
+            <tr><td>Current Date</td>
+                <td><input type="date" id="date"></td></tr>
+
+            <tr><td>Name</td>
+                <td><input type="text" id="name" size="20" maxlength="20" autofocus="yes"
+                           pattern="[A-Za-z- ]+" placeholder="First and Last name" required></td></tr>
+            <tr><td>Street Address</td>
+                <td><input type="text" id="address" size="31" autofocus="yes" placeholder="Street Address" required></td></tr>
+
+            <tr><td>Postal Code</td>
+                <td><input type="text" id="postalcode" size="31" autofocus="yes" placeholder="A1A 3B3"
+                           pattern="[A-Za-z]+[0-9]+[A-Za-z] [0-9]+[A-Za-z]+[0-9]" required></td></tr>
+
+            <tr><td>Phone Number</td>
+                <td><input type="radio" name="phoneType" value="business" size="10">Business
+                    <input type="radio" name="phoneType" value="personal" size="10">Personal</td></tr>
+            <tr><td></td><td><input type="tel" id="phone" size="18" placeholder="### ### ####"
+                                    pattern="\d{3} \d{3} \d{4}" required></td></tr>
+
+            <tr><td>E-mail:</td>
+                <td><input type="email" id="email" size="31" placeholder="example@example.net"
+                           pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required></td></tr><tr><td></td></tr>
+
+            <!--application-->
+            <tr><td>Are you a current client?</td>
+                <td><input type="radio" name="client" value="yes" size="10">Yes
+                    <input type="radio" name="client" value="no" size="10">No</td></tr>
+
+            <tr><td>Gender</td>
+                <td><input type="radio" name="gender" value="male" size="10">Male
+                    <input type="radio" name="gender" value="female" size="10">Female</td></tr>
+
+            <tr><td>Age</td>
+                <td><input type="number" id="age" size="5" min="18" max="130" required></td></tr>
+
+            <tr><td>Own or Rent Home </td>
+                <td><input type="radio" name="residence" value="own" size="10">Own
+                    <input type="radio" name="residence" value="rent" size="10">Rent Home</td></tr>
+
+            <tr><td>Annual Gross Income</td>
+                <td><input type="number" id="income" size="5" min="0" required></td></tr>
+
+            <tr><td>Own Vehicle</td>
+                <td><input type="checkbox" id="vehicle" name="vehicle" value="vehicle">Vehicle
+                    <input type="checkbox" id="rrsp" name="rrsp" value="rrsp">RRSP
+                    <input type="checkbox" id="tfsa" name="tfsa" value="tfsa">TFSA
+                    <input type="checkbox" id="rrif" name="rrif" value="rrif">RRIF</td></tr>
+        </table>
+
+        <div class="button">
+            <input type="submit" value="Submit" id="submit">
+            <input type="button" value="Edit" id="edit" disabled="true" onclick="setClientObject();return false"></div>
+    </form>
+
+    <div class="display">
+        <p><span id="showlist"></span></p></div>
+</div>
+</body>
+</html>

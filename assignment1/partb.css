@@ -1,0 +1,99 @@
+body{
+    background-image: url(pics/partb_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    background-color: rgba(200, 210, 200, 0.3);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #777a76;
+    border-radius: 4px;
+    padding: 25px;
+    width: 40%;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Neucha', cursive;
+}
+
+header {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    width: 90px;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+
+header h1 {
+    color: #e2e7e1;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px #000000;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.submit_button{
+    margin-top: 30px;
+    text-align: center;
+}
+.submit_button input{
+    margin-right: 20px;
+}
+.button {
+    background-color: #b75515; /* Green */
+    border: none;
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+td {
+    height: 30px;
+}
+.supplement td{
+    width: 300px;
+}
+
+.box {
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+}
+
+.detail {
+    font-family: 'Neucha', cursive;
+    font-size: 26px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+td #time-update {
+    width: 350px;
+}
+#time-update {
+    font-size: 15px;
+}
+
+.information td{
+    width: 175px;
+}
+
+table {
+    margin-bottom: 10px;
+}
+
