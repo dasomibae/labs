@@ -1,0 +1,88 @@
+body{
+    background-image: url(../pics/background_part2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Oxygen', sans-serif;
+    color: #cdcdcd;
+}
+
+
+/*header*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    color: #cdcdcd;
+    text-shadow: 4px 4px 2px #3f81b1;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Crimson Text', serif;
+}
+
+header img{
+    width: auto;
+    height: 80px;
+    display: inline-block;
+}
+
+
+/*content*/
+.content{
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+}
+
+img{
+    width: 650px;
+    height: auto;
+}
+
+figcaption{
+    text-align: left;
+    font-size: 18px;
+}
+
+#pagecolumns{
+    column-count: 3;
+    column-gap: 0px;
+}
+
+#pictures #descriptions{
+    animation-name: fading;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+#pictures, #descriptions{
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+#pictures.fadeOut, #descriptions.fadeOut {
+    opacity: 0;
+}
+
+h2{
+    font-size: 30px;
+    color: #eab836;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    position: fixed;bottom: 30px;
+    font-size: 23px;
+    text-align: center;
+    background-color: rgba(76, 76, 76, 0.0);
+    font-family: 'Crimson Text', serif;
+}

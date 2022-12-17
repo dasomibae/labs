@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <link href="currencyconverter.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="currencyconverter.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="content">
+    <h1>Currency Converter</h1>
+    <table cellpadding="5" class="table">
+
+        <tr>
+            <th>Currency on hand</th>
+            <th>Amount</th>
+            <th>Convert to:</th>
+            <th>Conversion Value</th>
+        </tr>
+        <tr>
+            <td>
+                <select id="currency_on_hand">
+                    <option selected="selected">Choose currency</option>
+                    <option value="1">Euro</option>
+                    <option value="2">US Dollar</option>
+                    <option value="3">Canadian Dollar</option>
+                    <option value="4">Bitcoin Digital Currency</option>
+                    <option value="5">Ethereum Digital Currency</option>
+            </select>
+            </td>
+
+            <td>
+                <input type="number" id="amount" min="0">
+            </td>
+
+            <td>
+                <select id="convert_currency" onchange="changedCurrency();">
+                    <option selected="selected">Choose currency</option>
+                    <option value="11">Euro</option>
+                    <option value="22">US Dollar</option>
+                    <option value="33">Canadian Dollar</option>
+                    <option value="44">Bitcoin Digital Currency</option>
+                    <option value="55">Ethereum Digital Currency</option>
+                </select>
+            </td>
+
+            <td>
+                <p class="output"><span id="conversion_value"> </span></p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
